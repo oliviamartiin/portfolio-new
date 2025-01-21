@@ -49,7 +49,7 @@ function App() {
         <div className="flex justify-center items-center mt-10 md:mt-12 lg:mt-10 mb-10">
           <h1 className="text-orange2 text-3xl md:text-5xl lg:text-6xl">ABOUT ME</h1>
         </div>
-          <div className="relative bg-blue_rectangle bg-opacity-60 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto z-10">
+          <div className="relative bg-blue_rectangle bg-opacity-60 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto z-10">
             <p className="text-xs sm:text-sm md:text-base text-[#FDFDFD] drop-shadow-md">
             Hi! I’m Olivia, a first year master's student at KTH, specializing in Interactive Media Technology and Engineering, with plans to graduate in 2026. I aspire to build a career in project management, where I can leverage my skills in user research, machine learning and data visualization. These roles appeal to me because of my appreciation for structured planning and my keen attention to detail. I love tackling complex challenges and am driven by the chance to make a real impact through my work.
               <br /><br />
@@ -114,29 +114,29 @@ function App() {
           {/* Internship pop-up */}
           {isModalOpen1 && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
-              <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md md:max-w-2xl lg:max-w-3xl mx-auto z-20">
+              <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto z-20">
                 <button className="absolute top-4 left-4 text-[#FDFDFD] text-xl cursor-pointer transform transition-transform duration-300 hover:scale-150 z-30" onClick={toggleModal1}>X</button>
                 <h2 className="text-lg md:text-xl text-[#FDFDFD] drop-shadow-md">INTERNSHIP AT ALSTER</h2>
                 <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
                   <br /><br />During my internship, I worked as a consultant for a startup developing an AI-personalized smartphone learning journey. My main responsibility was automating the creation of learning materials using large language models (LLMs), which involved extensive research into how LLMs work and how to craft effective prompts. The process focused on documenting which prompts succeeded and which didn’t. I took on a lot of responsibility during the internship, as it was primarily me and another intern managing our project and ensuring we met the goals we set from the beginning.
                 </p>
-                <div className="flex justify-center gap-20">
+                <div className="flex justify-center gap-8 md:gap-20">
                   <div>
                     <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md"><br /><br /> HARD SKILLS:</p>
                     {['AUTOMATION', 'PROMPT ENGINEERING', 'PROMPT CHAINING'].map(skill => (
-                      <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+                      <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-32 md:w-44 mx-auto z-10 mt-4">
                         <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
                       </div>))}
                     <div className="flex justify-center">
                       {['RAG', 'LLM'].map(skill => (
-                        <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-16 md:w-20 mx-auto z-10 mt-4">
+                        <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-14 md:w-20 mx-auto z-10 mt-4">
                           <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
                         </div>))}
                     </div>
                   </div>
                   <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md"><br /><br /> SOFT SKILLS:
                     {['PROBLEM-SOLVING', 'RESPONSABILITY', 'CONSULTANCY', 'TEAMWORK'].map(skill => (
-                      <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+                      <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-32 md:w-44 mx-auto z-10 mt-4">
                         <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">{skill}</p>
                       </div>))}
                   </p>
@@ -148,23 +148,23 @@ function App() {
           {/* Bachelor pop-up */}
           {isModalOpen2 && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
-              <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md md:max-w-2xl lg:max-w-3xl mx-auto z-20">
+              <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto z-20">
                 <button className="absolute top-4 left-4 text-[#FDFDFD] text-xl cursor-pointer transform transition-transform duration-300 hover:scale-150 z-30" onClick={toggleModal2}>X</button>
                 <h2 className="text-lg md:text-xl text-[#FDFDFD] drop-shadow-md">BACHELOR THESIS AT ALSTER</h2>
                 <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
                   <br /><br />I conducted my bachelor thesis with another student at Alster, where I worked as a consultant for a startup developing an AI-personalized smartphone learning journey. In our thesis, we investigated how a performance-based gamification strategy impacts student motivation on an e-learning platform. We designed a Figma prototype that included game elements like rewards, progress, and feedback, integrated into a quiz format. We tested the prototype with 23 students and conducted semi-structured interviews to gather insights. 
                 </p>
-                <div className="flex justify-center gap-20">
+                <div className="flex justify-center gap-8 md:gap-20">
                   <div>
                     <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md"><br /><br /> HARD SKILLS:</p>
                     {['USER RESEARCH', 'UX DESIGN', 'PROJECT MANAGEMENT', 'DATA ANALYZING'].map(skill => (
-                      <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+                      <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-32 md:w-44 mx-auto z-10 mt-4">
                         <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
                       </div>))}
                   </div>
                   <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md"><br /><br /> SOFT SKILLS:
                     {['TEAMWORK', 'COMMUNICATION', 'ADAPTABILITY', 'PLANNING'].map(skill => (
-                      <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+                      <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-32 md:w-44 mx-auto z-10 mt-4">
                         <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">{skill}</p>
                       </div>))}
                   </p>
@@ -175,7 +175,7 @@ function App() {
           {/* Plant app pop-up */}
           {isModalOpen3 && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
-            <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md md:max-w-2xl lg:max-w-3xl mx-auto z-30">
+            <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto z-30">
               <button className="absolute top-4 left-4 text-[#FDFDFD] text-xl cursor-pointer transform transition-transform duration-300 hover:scale-150 z-30" onClick={toggleModal3}>X</button>
               <h2 className="text-lg md:text-xl text-[#FDFDFD] drop-shadow-md">PLANT CARE APP</h2>
               <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
@@ -209,7 +209,7 @@ function App() {
           {/* AI Dating pop-up */}
 {isModalOpen4 && (
   <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
-    <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md md:max-w-2xl lg:max-w-3xl mx-auto z-20">
+    <div className="relative bg-blue_rectangle bg-opacity-90 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm md:max-w-2xl lg:max-w-3xl mx-auto z-20">
       <button
         className="absolute top-4 left-4 text-[#FDFDFD] text-xl cursor-pointer transform transition-transform duration-300 hover:scale-150 z-30"
         onClick={toggleModal4}>X</button>
@@ -220,20 +220,9 @@ function App() {
       <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
         <br />
         <br />
-        This project was part of a Human Perception course, exploring the
-        perception of real versus AI-generated faces in images and their impact
-        on user experiences. Our group focused on how effectively young women
-        could differentiate between AI-generated and real dating profiles. We
-        created both genuine and AI-generated dating profiles and conducted a
-        between-subject test with 20 young women. Additionally, we conducted
-        semi-structured interviews to gather deeper insights, performed
-        thematic analysis to identify recurring patterns, and carried out a
-        classification accuracy analysis to evaluate the participants' ability
-        to distinguish between real and AI-generated profiles. Below, you can
-        see our project poster, which provides a detailed explanation of the
-        entire study and our results.
+        This project, part of a Human Perception course, investigated how young women perceive real versus AI-generated faces in dating profiles and their impact on user experience. Our group created both real and AI-generated dating profiles and conducted a between-subject test with 20 participants. We also carried out semi-structured interviews to gain deeper insights, performed thematic analysis to identify patterns, and analyzed classification accuracy to assess participants' ability to differentiate between real and AI-generated profiles. Below is our project poster, which outlines the full study and its results.
       </p>
-      <div className="flex justify-center gap-8 md:gap-20">
+      <div className="flex justify-center gap-2 md:gap-20">
       <a 
   href="img/PJ1_a-Poster.png" 
   download="ProjectPoster" 
@@ -248,7 +237,7 @@ function App() {
             <br /> HARD SKILLS:
           </p>
           {['USER RESEARCH', 'UX DESIGN', 'PROJECT MANAGEMENT', 'DATA ANALYZING'].map(skill => (
-            <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-36 md:w-44 mx-auto z-10 mt-2 md:mt-4">
+            <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-28 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
             </div>
           ))}
@@ -257,7 +246,7 @@ function App() {
           <br />
           <br /> SOFT SKILLS:
           {['TEAMWORK', 'COMMUNICATION', 'ADAPTABILITY', 'PLANNING'].map(skill => (
-            <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-2 md:mt-4">
+            <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-28 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">{skill}</p>
             </div>
           ))}
