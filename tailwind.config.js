@@ -13,16 +13,27 @@ module.exports = {
         fontFamily: {
           body:["JetBrains Mono"]
         },
-      animation: {
-        float: "float 8s ease-in-out infinite"
-      },
-      keyframes: {
-        float: {
-          '0%': { transform: 'translateX(0)' },
-          '50%': { transform: 'translateX(-10px)' },
-          '100%': { transform: 'translateX(0)' },
+        animation: {
+          float: "float 5s ease-in-out infinite",
+          slideInLeft: "slideInLeft 3s ease-out",
+          slideInRight: "slideInRight 3s ease-out",
         },
-      }
+        keyframes: {
+          float: {
+            '0%': { transform: 'translateX(0)' },
+            '50%': { transform: 'translateX(-20px)' },
+            '100%': { transform: 'translateX(0)' },
+          },
+          slideInLeft: {
+            '0%': { transform: 'translateX(-100%)', opacity: '0' },
+            '100%': { transform: 'translateX(0)', opacity: '1' },
+          },
+          slideInRight: {
+            '0%': { transform: 'translateX(100%)', opacity: '0' },
+            '100%': { transform: 'translateX(0)', opacity: '1' },
+          },
+
+      },
     },
   },
   plugins: [],
