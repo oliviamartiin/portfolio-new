@@ -51,7 +51,7 @@ function App() {
         </div>
           <div className="relative bg-blue_rectangle bg-opacity-60 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto z-10">
             <p className="text-xs sm:text-sm md:text-base text-[#FDFDFD] drop-shadow-md">
-            Hi! I’m Olivia, a 24-year-old student studying my fourth year at the Master of Science in Media Technology at KTH, with plans to graduate in 2026. I aspire to build a career in project management, where I can apply my expertise in user research and data analysis. I’m naturally drawn to these roles because I value structured planning and have a strong eye to details. I enjoy solving complex problems and I’m motivated to make a positive impact through my work.
+            Hi! I’m Olivia, a first year master's student at KTH, specializing in Interactive Media Technology and Engineering, with plans to graduate in 2026. I aspire to build a career in project management, where I can leverage my skills in user research, machine learning and data visualization. These roles appeal to me because of my appreciation for structured planning and my keen attention to detail. I love tackling complex challenges and am driven by the chance to make a real impact through my work.
               <br /><br />
               I’m currently looking for a summer internship in 2025 to keep learning and getting hands-on experience. I’d love to be part of a team where I can bring my analytical and creative mindset and contribute to meaningful work!
               <br /><br />
@@ -233,15 +233,22 @@ function App() {
         see our project poster, which provides a detailed explanation of the
         entire study and our results.
       </p>
-      <div className="flex justify-center gap-20">
-      <a href="img/PJ1_a-Poster.png" download="ProjectPoster" className="bg-blue_rectangle bg-opacity-60 text-[#FDFDFD] border border-[#FDFDFD] text-xs mt-32 pt-1 w-40 h-10 rounded-xl shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:border-orange2 hover:text-orange2"> Download Project Poster</a>
+      <div className="flex justify-center gap-8 md:gap-20">
+      <a 
+  href="img/PJ1_a-Poster.png" 
+  download="ProjectPoster" 
+  className="bg-blue_rectangle bg-opacity-60 text-[#FDFDFD] border border-[#FDFDFD] text-xs mt-32 w-40 h-10 p-2 rounded-xl shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:border-orange2 hover:text-orange2 flex items-center justify-center"
+>
+  Project Poster
+</a>
+
         <div>
           <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
             <br />
             <br /> HARD SKILLS:
           </p>
           {['USER RESEARCH', 'UX DESIGN', 'PROJECT MANAGEMENT', 'DATA ANALYZING'].map(skill => (
-            <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+            <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-36 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
             </div>
           ))}
@@ -250,7 +257,7 @@ function App() {
           <br />
           <br /> SOFT SKILLS:
           {['TEAMWORK', 'COMMUNICATION', 'ADAPTABILITY', 'PLANNING'].map(skill => (
-            <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-4">
+            <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-40 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">{skill}</p>
             </div>
           ))}
