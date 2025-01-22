@@ -30,10 +30,10 @@ function App() {
         </div>
 
         </div>
-        <img src="img/rättmoln.png" alt="moln" className="absolute top-[-20%] right-[-50%] sm:w-300 animate-slideInLeft animate-float z-0" />
-        <img src="img/rättmoln.png" alt="moln" className="absolute bottom-[-4%] left-[-10%] sm:w-300 animate-slideInLeft animate-float z-0" />
+        <img src="img/rättmoln.png" alt="moln" className="absolute top-[-20%] right-[-50%] sm:w-300  animate-float z-0" />
+        <img src="img/rättmoln.png" alt="moln" className="absolute bottom-[-4%] left-[-10%] sm:w-300 animate-float z-0" />
         <img src="img/white-cloud.png" alt="moln" className="absolute top-[20%] left-[10%] sm: w-300 animate-float  animate-floatz-0 md:hidden" />
-        <img src="img/white-cloud.png" alt="moln" className="absolute top-[-20%] left-[10%] sm: w-300 animate-slideInRight animate-float z-0" />
+        <img src="img/white-cloud.png" alt="moln" className="absolute top-[-20%] left-[10%] sm: w-300  animate-float z-0" />
 
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-orange2">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className=" animate-bounce w-16 h-16">
@@ -90,7 +90,7 @@ function App() {
 
       {/* Clickable rectangle (Multimodala) */}
       <div className="relative text-[#FDFDFD] bg-blue_rectangle bg-opacity-60 border border-[#FDFDFD] p-8 md:p-8 lg:p-14 rounded-xl shadow w-80 md:w-80 lg:w-96 z-10 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:border-orange2 hover:text-orange2 flex items-center justify-center" onClick={toggleModal4}>
-        <h2 className="text-lg md:text-xl drop-shadow-md">AI in Dating Profiles
+        <h2 className="text-lg md:text-xl drop-shadow-md">AI IN DATING PROFILES
 </h2>
       </div>
     </div>
@@ -214,13 +214,13 @@ function App() {
         className="absolute top-4 left-4 text-[#FDFDFD] text-xl cursor-pointer transform transition-transform duration-300 hover:scale-150 z-30"
         onClick={toggleModal4}>X</button>
       <h2 className="text-lg md:text-xl text-[#FDFDFD] drop-shadow-md">
-        AI in Dating profiles
+        AI IN DATING PROFILES
       </h2>
 
       <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
         <br />
         <br />
-        This project, part of a Human Perception course, investigated how young women perceive real versus AI-generated faces in dating profiles and their impact on user experience. Our group created both real and AI-generated dating profiles and conducted a between-subject test with 20 participants. We also carried out semi-structured interviews to gain deeper insights, performed thematic analysis to identify patterns, and analyzed classification accuracy to assess participants' ability to differentiate between real and AI-generated profiles. Below is our project poster, which outlines the full study and its results.
+        This project, part of a Human Perception course, investigated how young women perceive real versus AI-generated faces in dating profiles and their impact on user experience. Our group created both real and AI-generated dating profiles and conducted a between-subject test with 20 participants. We also carried out semi-structured interviews to gain deeper insights, performed thematic analysis to identify patterns, and analyzed classification accuracy to assess participants' ability to differentiate between real and AI-generated profiles. Click on the "Project Poster" button to read more about the study and the results.
       </p>
       <div className="flex justify-center gap-2 md:gap-20">
       <a 
@@ -228,7 +228,7 @@ function App() {
   download="ProjectPoster" 
   className="bg-blue_rectangle bg-opacity-60 text-[#FDFDFD] border border-[#FDFDFD] text-xs mt-32 w-40 h-10 p-2 rounded-xl shadow-lg cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:border-orange2 hover:text-orange2 flex items-center justify-center"
 >
-  Project Poster
+  PROJECT POSTER
 </a>
 
         <div>
@@ -236,7 +236,7 @@ function App() {
             <br />
             <br /> HARD SKILLS:
           </p>
-          {['USER RESEARCH', 'UX DESIGN', 'PROJECT MANAGEMENT', 'DATA ANALYZING'].map(skill => (
+          {['USER RESEARCH', 'DATA ANALYZING', 'AI KNOWLEDGE', 'RESEARCH DESIGN'].map(skill => (
             <div key={skill} className="relative bg-[#FDFDFD] bg-opacity-90 p-2 rounded-3xl shadow w-28 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-blue_rectangle drop-shadow-md">{skill}</p>
             </div>
@@ -245,7 +245,7 @@ function App() {
         <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">
           <br />
           <br /> SOFT SKILLS:
-          {['TEAMWORK', 'COMMUNICATION', 'ADAPTABILITY', 'PLANNING'].map(skill => (
+          {['TEAMWORK', 'COMMUNICATION', 'PROBLEM-SOLVING'].map(skill => (
             <div key={skill} className="relative bg-blue_rectangle bg-opacity-10 border border-[#FDFDFD] p-2 rounded-3xl shadow w-28 md:w-44 mx-auto z-10 mt-2 md:mt-4">
               <p className="text-xs md:text-sm text-[#FDFDFD] drop-shadow-md">{skill}</p>
             </div>
