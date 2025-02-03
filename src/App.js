@@ -51,11 +51,11 @@ function App() {
         </div>
           <div className="relative bg-blue_rectangle bg-opacity-60 border border-[#FDFDFD] p-4 md:p-8 rounded-xl shadow max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto z-10">
             <p className="text-xs sm:text-sm md:text-base text-[#FDFDFD] drop-shadow-md">
-            Hi! I’m Olivia, a first year master's student at KTH, specializing in Interactive Media Technology and Engineering, with plans to graduate in 2026. I aspire to build a career in project management, where I can leverage my skills in user research, machine learning and data visualization. These roles appeal to me because of my appreciation for structured planning and my keen attention to detail. I love tackling complex challenges and am driven by the chance to make a real impact through my work.
+            Hey! I’m Olivia, a first-year master’s student at KTH, specializing in Interactive Media Technology and Engineering. I’m set to graduate in 2026 and aiming for a career in project management—where I can blend my skills in user research, design and machine learning. I love structured planning, thrive on solving complex challenges and get excited about making a real impact through my work.
               <br /><br />
-              I’m currently looking for a summer internship in 2025 to keep learning and getting hands-on experience. I’d love to be part of a team where I can bring my analytical and creative mindset and contribute to meaningful work!
+              Right now, I’m looking for a summer internship in 2025 to keep learning and gaining hands-on experience. I’d love to join a team where I can bring both my analytical and creative mindset and contribute to something meaningful.
               <br /><br />
-              Feel free to reach out — I’m always open to new opportunities, projects, or just a good conversation!
+              Feel free to reach out - I’m always up for new opportunities, projects or just a great conversation!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mt-5 text-[#FDFDFD] border-[#FDFDFD]">
               <div className="relative bg-blue_rectangle bg-opacity-60 border p-3 sm:p-4 rounded-3xl shadow w-28 md:w-44 mx-auto z-10 cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:border-orange2 hover:text-orange2">
